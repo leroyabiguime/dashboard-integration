@@ -2,7 +2,7 @@ import React from 'react'
 import './sidebar.css'
 import logo from '../../assets/images/logo.png'
 import sidebar_items from '../../assets/JsonData/sidebar_routes.json'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const SidebarItem = props => {
     const active = props.active ? 'active' : ''
@@ -19,7 +19,8 @@ const SidebarItem = props => {
     )
 }
 const Sidebar = props => {
-    const activeItem = sidebar_items.findIndex(item => item.route === props?.location?.pathname)
+    const location = useLocation()
+    const activeItem = sidebar_items.findIndex(item => item.route === location.pathname)
   return (
     <div className='sidebar'>
         <div className="sidebar__logo">
@@ -31,7 +32,7 @@ const Sidebar = props => {
                     <SidebarItem
                         title={item.display_name}
                         icon={item.icon}
-                        active={index===activeItem}
+                        active={index === activeItem}
                     />
                 </Link>
             ))
