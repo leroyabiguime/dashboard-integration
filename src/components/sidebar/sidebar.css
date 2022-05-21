@@ -1,0 +1,9 @@
+.sidebar {
+position: fixed;
+min-height: 100vh;
+min-width: var(--sidebar-width);
+left: 0;
+top: 0;
+background: var(--main-bg);
+box-shadow: var(--box-shadow);
+}

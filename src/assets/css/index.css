@@ -38,6 +38,7 @@
     --border-radius: 15px;
     --topnav-height: 110px;
     --transition-cubic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 * {
@@ -150,4 +151,11 @@ input:focus {
 .orange-color {
     background-color: var(--main-color-orange);
     color: #fff;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+
 }

@@ -1,7 +1,8 @@
 import React from 'react'
-import {BrowserRouter, Route,Routes} from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom'
 import Sidebar from '../sidebar/Sidebar'
 import  RoutesList  from '../Routes'
+import './layout.css'
 
 const Layout = () => {
   return (
