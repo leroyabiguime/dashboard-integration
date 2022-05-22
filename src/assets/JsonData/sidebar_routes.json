@@ -7,12 +7,32 @@
     {
         "display_name": "Customers",
         "route": "/customers",
-        "icon": "bx bx-user-pin"
+        "icon": "bx bx-user-pin",
+        "submenu": [
+            {
+            "display_name": "Submenu1",
+            "route": "/submenu1"
+            },
+            {
+            "display_name": "Submenu2",
+            "route": "/submenu2"
+            }
+    ]
     },
     {
         "display_name": "categories",
         "route": "/categories",
-        "icon": "bx bx-list-ol"
+        "icon": "bx bx-list-ol",
+        "submenu": [
+            {
+            "display_name": "Submenu1",
+            "route": "/submenu1"
+            },
+            {
+            "display_name": "Submenu2",
+            "route": "/submenu2"
+            }
+    ]
     },
     {
         "display_name": "Products",
@@ -22,7 +42,17 @@
     {
         "display_name": "Orders",
         "route": "/orders",
-        "icon": "bx bx-cart"
+        "icon": "bx bx-cart",
+        "submenu": [
+            {
+            "display_name": "Submenu1",
+            "route": "/submenu1"
+            },
+            {
+            "display_name": "Submenu2",
+            "route": "/submenu2"
+            }
+    ]
     },
     {
         "display_name": "Analytics",
