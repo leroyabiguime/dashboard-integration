@@ -42,6 +42,9 @@ const Topnav = () => {
   return (
     <div>
         <div className="topnav">
+        <div className="middle">
+                <div className="responsive-menu"></div>
+        </div>
             <div className="topnav__search">
                 <input type="text" placeholder='Search here ...' />
                 <i className='bx bx-search'></i>

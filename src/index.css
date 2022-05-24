@@ -50,3 +50,7 @@ input {
   border: 2px solid transparent;
   outline: 0;
 }
+.page-header {
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
