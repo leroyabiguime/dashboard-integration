@@ -2,7 +2,7 @@
     {
         "icon": "bx bx-shopping-bag",
         "count": "1,995",
-        "title": "Total sales"
+        "title": "Total visits"
     },
     {
         "icon": "bx bx-cart",
@@ -12,11 +12,11 @@
     {
         "icon": "bx bx-dollar-circle",
         "count": "$2,632",
-        "title": "Total income"
+        "title": "Total orders"
     },
     {
         "icon": "bx bx-receipt",
         "count": "1,711",
-        "title": "Total orders"
+        "title": "Total income"
     }
 ]

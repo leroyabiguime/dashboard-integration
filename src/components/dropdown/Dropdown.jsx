@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import './dropdown.css'
+
 const clickOutsideRef = (content_ref, toggle_ref) =>{
     document.addEventListener('mousedown', (e) => {
         if(toggle_ref.current && toggle_ref.current.contains(e.target)){
@@ -21,7 +22,7 @@ const Dropdown = props => {
         <button ref={dropdown_toggle_el} className="dropdown__toggle">
              {props.icon ? <i className={props.icon}></i> : ''}
         {props.badge ? <span className='dropdown__toggle-badge'> {props.badge}</span> : ''}
-        {props.customToogle ? props.customToogle() : ''}
+        {props.customToggle ? props.customToggle() : ''}
         </button>
        <div ref={dropdown_content_el} className="dropdown__content">
             {

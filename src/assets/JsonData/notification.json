@@ -1,22 +1,22 @@
 [
     {
         "icon": "bx bx-error",
-        "content": "Curabitur id eros quis nunc suscipit blandit"
+        "content": "It is a long established fact that a reader will be "
     },
     {
         "icon": "bx bx-package",
-        "content": "Duis malesuada justo eu sapien elementum, in semper diam posuere"
+        "content": "distracted by the readable content of a page when looking at its layout."
     },
     {
         "icon": "bx bx-cart",
-        "content": "Donec at nisi sit amet tortor commodo porttitor pretium a erat"
+        "content": "distracted by the readable content of a page when looking at its layout."
     },
     {
         "icon": "bx bx-error",
-        "content": "In gravida mauris et nisi"
+        "content": "distracted by the readable content of a page when looking at its layout."
     },
     {
         "icon": "bx bx-cart",
-        "content": "Curabitur id eros quis nunc suscipit blandit"
+        "content": "It is a long established fact that a reader will be "
     }
 ]
