@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import user_menu from '../../assets/JsonData/user_menus.json'
 // import user_image from '../../assets/images/leroy.png'
 import user_image from '../../assets/images/logo.png'
+import ThemeMenu from '../thememenu/ThemeMenu'
 const curr_user = {
     display_name: 'Leroy Abiguime',
     image: user_image
@@ -67,8 +68,7 @@ const Topnav = () => {
                 />
                 </div>
                 <div className="topnav__right-item">
-                <Dropdown
-
+                <ThemeMenu
                 />
                 </div>
             </div>
