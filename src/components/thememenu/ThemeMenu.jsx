@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import './thememenu.css'
 const mode_settings = [
@@ -26,7 +26,7 @@ const color_settings = [
     },
     {
         id: 'red',
-        name: 'Red',
+        name: 'Red', 
         background: 'red-color',
         class: 'theme-color-red'
 
@@ -39,15 +39,32 @@ const color_settings = [
 
     },
 ]
+const clickOutsideRef = (content_ref, toggle_ref) =>{
+    document.addEventListener('mousedown', (e) => {
+        if(toggle_ref.current && toggle_ref.current.contains(e.target)){
+            content_ref.current.classList.toggle('active')
+        } else {
+            if(content_ref.current && ! content_ref.current.contains(e.target)){
+                content_ref.current.classList.remove('active')
+            }
+        }
+    })
+}
 const ThemeMenu = () => {
+    const menu_ref = useRef(null)
+    const menu_toggle_ref = useRef(null)
+     clickOutsideRef(menu_ref, menu_toggle_ref)
+
+    const setActiveMenu = () => menu_ref.current.classList.add('active')
+    const closeMenu = () => menu_ref.current.classList.remove('active')
   return (
     <div>
-        <button className='dropdown__toggle'>
+        <button ref={menu_toggle_ref} className='dropdown__toggle' onClick={() => setActiveMenu()}>
             <i className='bx bx-palette'></i>
         </button>
-        <div className="theme-menu">
+        <div ref={menu_ref} className="theme-menu">
             <h4>Theme settings</h4>
-            <button className='theme-menu__close'>
+            <button className='theme-menu__close' onClick={() => closeMenu()}>
                 <i className='bx bx-x'></i>
             </button>
             <div className="theme-menu__select">
