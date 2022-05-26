@@ -64,7 +64,7 @@ const latestOrders = {
   "user": "Yannick doe",
   "date": "17 August 2021",
   "price": "$122,341",
-  "status": "shipping"
+  "status": "pending"
 },
 { "id": "4",
 "user": "Leroy doe",
@@ -74,9 +74,9 @@ const latestOrders = {
 },
 { "id": "5",
 "user": "Vue doe",
-"date": "13 Jun 2021",
+"date": "13 Jun 2022",
 "price": "$122,341",
-"status": "shipping"
+"status": "pending"
 },
 { "id": "6",
 "user": "Ice doe",
@@ -88,7 +88,6 @@ const latestOrders = {
 }
 
 const orderStatus = {
-  "shipping": "primary",
   "pending": "warning",
   "paid": "success",
   "refund": "danger"
