@@ -7,10 +7,30 @@
     I Built React Admin Dashboard with ReactJS, CSS, Redux
 
 
-
 # Preview
 ![CHEESE!](black-dashboard.png)
-![CHEESE!](light-dash.png)
+![CHEESE!](light-dashboard.png)
+
+
+## Deploy on your computer
+You need to have `nodejs` and `git` installed on your pc for following the intructions
+
+First download the repository using
+```
+git clone https://github.com/leroyabiguime/react-template-integration.git
+```
+
+After you download this repository to your computer. Next, to download the dependencies run
+```
+npm install
+```
+
+Now build and start the production build of the site using
+```
+npm run start
+```
+
+This will start the app on http://localhost:3000
 
 # Video
 
