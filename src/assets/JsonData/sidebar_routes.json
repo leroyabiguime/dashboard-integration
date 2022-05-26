@@ -2,27 +2,12 @@
     {
         "display_name": "Dashboard",
         "route": "/",
-        "icon": "bx bx-category-alt"
-    },
-    {
-        "display_name": "Customers",
-        "route": "/customers",
-        "icon": "bx bx-user-pin",
-        "submenu": [
-            {
-            "display_name": "Submenu1",
-            "route": "/submenu1"
-            },
-            {
-            "display_name": "Submenu2",
-            "route": "/submenu2"
-            }
-    ]
+        "icon": "bx bxs-dashboard"
     },
     {
         "display_name": "categories",
         "route": "/categories",
-        "icon": "bx bx-list-ol",
+        "icon": "bx bxs-category-alt",
         "submenu": [
             {
             "display_name": "Submenu1",
@@ -37,12 +22,12 @@
     {
         "display_name": "Products",
         "route": "/products",
-        "icon": "bx bx-package"
+        "icon": "bx bxl-product-hunt"
     },
     {
         "display_name": "Orders",
         "route": "/orders",
-        "icon": "bx bx-cart",
+        "icon": "bx bx-border-top",
         "submenu": [
             {
             "display_name": "Submenu1",
@@ -57,6 +42,6 @@
     {
         "display_name": "Analytics",
         "route": "/analytics",
-        "icon": "bx bx-bar-chart-alt"
+        "icon": "bx bx-analyse"
     }
 ]

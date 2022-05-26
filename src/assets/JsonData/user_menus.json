@@ -8,7 +8,7 @@
         "content": "Settings"
     },
     {
-        "icon": "bx bx-log-out-circle bx-rotate-180",
+        "icon": "bx bx-log-out-circle",
         "content": "Logout"
     }
 ]
