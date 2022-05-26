@@ -17,7 +17,7 @@ You need to have `nodejs` and `git` installed on your pc for following the intru
 
 First download the repository using
 ```
-git clone https://github.com/leroyabiguime/react-template-integration.git
+git clone https://github.com/leroyabiguime/dashboard-integration.git
 ```
 
 After you download this repository to your computer. Next, to download the dependencies run
