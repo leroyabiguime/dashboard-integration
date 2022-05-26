@@ -2,11 +2,7 @@
     {
         "icon": "bx bx-user",
         "content": "Profile"
-    },
-    {
-        "icon": "bx bx-cog",
-        "content": "Settings"
-    },
+    }
     {
         "icon": "bx bx-log-out-circle",
         "content": "Logout"
