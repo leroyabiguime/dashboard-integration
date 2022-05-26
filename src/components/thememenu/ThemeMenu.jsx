@@ -1,4 +1,6 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import { useDispatch } from 'react-redux'
+import ThemeAction  from '../../redux/actions/ThemeAction'
 
 import './thememenu.css'
 const mode_settings = [
@@ -39,6 +41,9 @@ const color_settings = [
 
     },
 ]
+
+
+
 const clickOutsideRef = (content_ref, toggle_ref) =>{
     document.addEventListener('mousedown', (e) => {
         if(toggle_ref.current && toggle_ref.current.contains(e.target)){
@@ -51,6 +56,30 @@ const clickOutsideRef = (content_ref, toggle_ref) =>{
     })
 }
 const ThemeMenu = () => {
+    const setMode = mode => {
+        setCurrMode(mode.id)
+        localStorage.setItem('themeMode',mode.class)
+        dispatch(ThemeAction.setMode(mode.class))
+    }
+    const setColor= color => {
+        setCurrColor(color.id)
+        localStorage.setItem('colorMode', color.class)
+        dispatch(ThemeAction.setColor(color.class))
+
+    }
+    
+    
+    const [currentMode, setCurrMode] = useState('light')
+    const [currColor, setCurrColor] = useState('blue')
+    const dispatch = useDispatch()
+    useEffect(() => {
+        const themeClass = mode_settings.find(e => e.class === localStorage.getItem('themeMode',
+        'theme-mode-light'))
+        const colorClass = color_settings.find(e => e.class === localStorage.getItem('colorMode', 'theme-mode-light'))
+        if(themeClass !== undefined) setCurrMode(themeClass.id)
+        if(colorClass !== undefined) setCurrColor(colorClass.id)
+    
+    },[])
     const menu_ref = useRef(null)
     const menu_toggle_ref = useRef(null)
      clickOutsideRef(menu_ref, menu_toggle_ref)
@@ -72,8 +101,8 @@ const ThemeMenu = () => {
                 <ul className='mode-list'>
                     {
                         mode_settings.map((item, index) => (
-                            <li key={index}>
-                                <div className={ `mode-list__color ${item.background}`}>
+                            <li key={index} onClick={() => setMode(item)}>
+                                <div className={ `mode-list__color ${item.background} ${item.id === currentMode ? 'active':''}`}>
                                     <i className='bx bx-check'></i>
                                 </div>
                                 <span> {item.name}</span>
@@ -87,8 +116,8 @@ const ThemeMenu = () => {
                 <ul className='mode-list'>
                     {
                         color_settings.map((item, index) => (
-                            <li key={index}>
-                                <div className={ `mode-list__color ${item.background}`}>
+                            <li key={index} onClick={() => setColor(item)}>
+                                <div className={ `mode-list__color ${item.background} ${item.id === currColor ? 'active':''}`}>
                                     <i className='bx bx-check'></i>
                                 </div>
                                 <span> {item.name}</span>
