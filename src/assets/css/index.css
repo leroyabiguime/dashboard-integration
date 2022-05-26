@@ -8,12 +8,6 @@
     --main-color: #349eff;
     --second-color: #62b4ff;
     --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
-    --main-bg-light: #ffffff;
-    --second-bg-light: #fafafb;
-    --txt-color-light: #455560;
-    --box-shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
     --main-bg-dark: #2d2d2d;
     --second-bg-dark: #202020;
     --txt-color-dark: #bbbbbb;
@@ -39,6 +33,10 @@
     --topnav-height: 110px;
     --transition-cubic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --main-bg-light: #ffffff;
+    --second-bg-light: #fafafb;
+    --txt-color-light: #455560;
+    --box-shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 * {
