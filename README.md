@@ -9,8 +9,8 @@
 
 
 # Preview
-/assets/black-dashboard.png
-/assets/light-dashboard.png
+![CHEESE!](black-dashboard.png)
+![CHEESE!](light-dashboard.png)
 
 # Video
 
