@@ -10,7 +10,7 @@
 
 # Preview
 ![CHEESE!](black-dashboard.png)
-![CHEESE!](light-dashboard.png)
+![CHEESE!](light-dash.png)
 
 # Video
 
