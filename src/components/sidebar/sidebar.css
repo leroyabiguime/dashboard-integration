@@ -18,10 +18,10 @@ box-shadow: var(--box-shadow);
     height: 85px;
 }
 .sidebar__item {
-    padding: 0 20px;
+    padding: 0 50px;
 }
 .sidebar__item-inner {
-    padding: 10px 23px;
+    padding: 10px 13px;
     display: flex;
     align-items: center;
     font-weight: 600;
