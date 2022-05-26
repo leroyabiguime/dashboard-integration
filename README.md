@@ -34,7 +34,7 @@ This will start the app on http://127.0.0.1:3000
 or 
 This will start the app on http://localhost:3000
 
-# Now Enjour :=)
+# Now Enjoy :=)
 
 # Contact
 Leroy Abiguime- [Twitter](https://www.twitter.com/leeroyAb) - mataa.abiguime17@gmail.com 
