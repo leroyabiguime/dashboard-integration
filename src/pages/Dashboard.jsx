@@ -8,37 +8,59 @@ import Badge from '../components/badge/Badge'
 
 
 const chartOptions = {
+
+  options: {
+      series: [3, .5, 1],
+      labels: ["Monday", "Tuesday", "Wednesday"],
+      colors: ['#009965', '#E32227', "#E58300"],
+      plotOptions: {
+          pie: {
+              expandOnClisk: false,
+          },
+          donut: {
+              size: "50px",
+              labels: {
+                  show: true,
+                  total: {
+                      show: true,
+                      showAlways: true,
+                      fontSize: "34px",
+                      color: "#E32227",
+                      height: "100%"
+                  }
+              }
+          }
+      }
+  }
+}
+const chartOptions2 = {
   series: [{
-    name: 'online Customers',
-    data: [40, 70, 30, 80, 91, 60, 88 , 28, 71]
-  },
-  {
-    name: 'Store Customers',
-    data: [40, 30, 70, 80, 91, 60, 88 , 28, 79, 35]
-  },
-],
-options: {
-  color: ['#6ab04c', '#2980b9'],
-  chart: {
-    background: 'transparent'
-  },
-  dataLabels: {
-    enabled: false
-  },
-   stroke: {
-     curve: 'smooth'
-   },
-   xacis: {
-     categories: ['Jan', 'Feb', 'Mar', 'Apr','May', 'Jun', 'Aug','Sep']
-   },
-   legend: {
-     position: 'top'
-   },
-   grid: {
-     show: false
-   }
+      name: 'Number of SMS',
+      data: [40,70,20,90,36,80,30,91,60]
+  }],
+  options: {
+      color: ['#6ab04c', '#2980b9'],
+      chart: {
+          background: 'transparent'
+      },
+      dataLabels: {
+          enabled: false
+      },
+      stroke: {
+          curve: 'smooth'
+      },
+      xaxis: {
+          categories: ['SN', 'NG', 'TN', 'CI', 'ML', 'BF', 'CG', 'MG', 'Jul']
+      },
+      legend: {
+          position: 'top'
+      },
+      grid: {
+          show: false
+      }
+  }
 }
-}
+
 const latestOrders = {
   head: [
     'order id',
@@ -181,15 +203,17 @@ const Dashboard = () => {
             ))}
           </div>
         </div>
-        <div className="col-6">
-            <div className="card full-height">
-              <Chart
-              options={chartOptions.options}
-              series={chartOptions.series}
-              type='line'
-              height='100%'
-              />
-            </div>
+        <div className="col-4">
+        <div className="card full-height">
+
+        <Chart
+            options={chartOptions.options}
+            series={chartOptions.options.series}
+            type='donut'
+            height='100%'
+        />
+          </div>
+          
           </div>
           <div className="col-4">
             <div className="card">
@@ -210,21 +234,13 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="col-8">
-            <div className="card">
-              <div className="card__header">
-                <h3>last orders</h3>
-              </div>
-              <div className="card__body">
-                <Table
-                headData={latestOrders.head}
-                renderHead={(item, index) => renderOrderHead(item, index)}
-                bodyData={latestOrders.body}
-                renderBody={(item, index) => renderOrderBody(item, index)}
-                />
-              </div>
-              <div className="card__footer">
-                <Link to='/ '> View All</Link>
-              </div>
+          <div className="card full-height">
+              <Chart
+              options={chartOptions2.options}
+              series={chartOptions2.series}
+              type='line'
+              height='100%'
+              />
             </div>
           </div>
 
