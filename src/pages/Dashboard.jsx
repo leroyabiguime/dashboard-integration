@@ -79,7 +79,7 @@ const latestOrders = {
 "status": "shipping"
 },
 { "id": "6",
-"user": "Vue doe",
+"user": "Ice doe",
 "date": "13 Jun 2021",
 "price": "$122,341",
 "status": "refund"
